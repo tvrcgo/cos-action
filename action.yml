@@ -1,0 +1,20 @@
+
+name: 'Upload COS'
+description: ''
+inputs:
+  secret_id:
+    required: true
+  secret_key:
+    required: true
+  region:
+    required: true
+  bucket:
+    required: true
+  assets:
+    required: true
+outputs:
+  count:
+    description: uploaded files count
+runs:
+  using: 'node16'
+  main: 'index.js'
